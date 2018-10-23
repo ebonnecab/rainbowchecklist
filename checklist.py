@@ -9,7 +9,6 @@ def create(item):
 #read function
 def read(index):
     return checklist[index]
-# print (checklist[0])
 
 #update function
 def update(index, item):
@@ -21,14 +20,12 @@ def update(index, item):
 def destroy(index):
     checklist.pop(index)
 
-# def test():
-#     create("purple sox")
-#     create("red cloak")
-#     update(0, "purple socks")
-#     destroy(1)
-
-# print(read(0))
-# print(read(1))
-# print(read(0))
-# print(read(1)
-
+def test():
+    create("purple sox")
+    create("red cloak")
+    print(read(0))
+    print(read(1))
+    update(0, "purple socks")
+    destroy(1)
+    print(read(0))
+test()
