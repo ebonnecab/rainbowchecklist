@@ -39,8 +39,20 @@ def list_all_items():
         print("{} {}".format(index, list_item))
 list_all_items()
 
-# mark completed function
-# def mark_completed(index):
+# select function
+def select(function_code):
+
+# create item
+    if function_code == "C":
+        create_item = input("Input item: ")
+        create(create_item)
+        print(checklist)
+
+# read item
+    elif function_code == "R":
+        index = int(input("Which item number do you want from the list? You only have {}: ".format(len(checklist))))
+        print(read(index))
     
+select("R")
 
 
