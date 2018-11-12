@@ -26,6 +26,9 @@ def list_all_items():
         print("Index: {} Item: {}".format(index, list_item))
         index += 1
 
+def mark_completed():
+    index = int(input("Pick the index number of the item you would like to check off your list: "))
+    checklist[index] = "check {}".format(checklist[index])
 
 # select function
 def select(function_code):
@@ -91,6 +94,7 @@ def test():
     select("R")
     list_all_items()
     select("P")
+    mark_completed()
     list_all_items()
     select("D")
     list_all_items()
